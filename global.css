@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(45, 115, 180);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(148, 191, 230);
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: rgb(148, 191, 230);
+}
+
+#ocean{
+    opacity: 45%;
+}
+
+#container{
+    position: relative;
+}
+
+input{
+    top: 8%;
+    left: 8%;
+    position: absolute;
+    padding: 18px;
+    font-weight: bolder;
+    border: none;
+    background-color: azure;
+    color: rgb(188, 148, 230);
+    font-size: larger;
+}
+
+input:hover{
+    background-color: rgb(177, 219, 218);
+}
+
+.fish{
+    cursor: url('images/fishy.png') 10 75, auto;
+}
+
+.whale{
+    cursor: url('images/whale.png') 10 37, auto;
+}
+
+#attribution{
+    width: 100%;
+    font-size: 8px;
+    text-align: right;
+    bottom: 0;
+    margin-right: 10;
+    padding-bottom: 2;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+} 
