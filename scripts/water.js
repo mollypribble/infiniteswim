@@ -1,4 +1,5 @@
 console.log("hello world! i'm a fish.")
+console.log("***note*** i already have a portfolio so this is just for fun. to put my work here i will add more buttons that have links (as opposed to buttons that just change the cursor image)")
 
 //set points
 var points = 0;
