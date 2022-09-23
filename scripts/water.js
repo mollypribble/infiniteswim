@@ -1,5 +1,4 @@
-console.log("hello world! i'm a fish.")
-console.log("***note*** i already have a portfolio so this is just for fun. to put my work here i will add more buttons that have links (as opposed to buttons that just change the cursor image)")
+console.log("hello world! i'm a fish (for now).")
 
 //set points
 var points = 0;
@@ -45,7 +44,7 @@ class Bubble {
             const newStartAngle = 0;
             const newEndAngle = 2 * Math.PI;
             const newClockwise = false;
-            var newSpeed = 4;
+            var newSpeed = 1.5;
             var newColor = 'blue';
             var newButton = false;
 
@@ -53,11 +52,11 @@ class Bubble {
             const styleNum = Math.floor(Math.random()*3);
             if (styleNum == 0){
                 // slow speed
-                newSpeed = 1;
+                newSpeed = 0.5;
             }
             else if (styleNum == 1){
                 // mid speed
-                newSpeed = 2.5;
+                newSpeed = 1;
             }
 
             // set variable color
@@ -133,8 +132,8 @@ function changeButton() {
     if (button.value == "I wanna be a whale!"){
         console.log("changing to whale...")
         button.value = "I wanna be a fish!";
-        button.setAttribute("class", "whale");
-        container.setAttribute("class", "whale");
+        button.setAttribute("class", "whaleButton");
+        container.setAttribute("class", "whaleContainer");
     }
     else {
         console.log("changing to fish...")
