@@ -129,16 +129,23 @@ loop();
 function changeButton() {
     const button = document.getElementById("switchButton");
     const container = document.getElementById("container");
+    const otherButtons = document.getElementsByTagName("button");
     if (button.value == "I wanna be a whale!"){
         console.log("changing to whale...")
         button.value = "I wanna be a fish!";
         button.setAttribute("class", "whaleButton");
-        container.setAttribute("class", "whaleContainer");
+        container.setAttribute("class", "whale");
+        for (let i=0; i<otherButtons.length; i++){
+            otherButtons[i].setAttribute("class", "whale")
+        }
     }
     else {
         console.log("changing to fish...")
         button.value = "I wanna be a whale!"
         button.setAttribute("class", "fish");
         container.setAttribute("class", "fish");
+        for (let i=0; i<otherButtons.length; i++){
+            otherButtons[i].setAttribute("class", "fish")
+        }
     }
 }
