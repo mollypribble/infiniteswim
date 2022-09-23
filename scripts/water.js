@@ -9,11 +9,9 @@ var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
 
 function changeWindowSize() {
-    // console.log("before: ", ocean.style.height, ocean.style.width);
     windowHeight = window.innerHeight;
     windowWidth = window.innerWidth;
     setOcean(ocean, windowWidth, windowHeight);
-    // console.log("window changed size: ", ocean.style.height, ocean.style.width);
 }
 
 window.addEventListener('resize', changeWindowSize);
@@ -111,7 +109,6 @@ class Bubble {
     update() {
         this.X += this.speed;
         if (this.X > ocean.width + 250){
-            console.log("reset")
             this.X = 0-250;
         }
     }
@@ -133,11 +130,13 @@ function changeButton() {
     const button = document.getElementById("switchButton");
     const container = document.getElementById("container");
     if (button.value == "I wanna be a whale!"){
+        console.log("changing to whale...")
         button.value = "I wanna be a fish!";
         button.setAttribute("class", "whale");
         container.setAttribute("class", "whale");
     }
     else {
+        console.log("changing to fish...")
         button.value = "I wanna be a whale!"
         button.setAttribute("class", "fish");
         container.setAttribute("class", "fish");
