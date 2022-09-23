@@ -34,7 +34,7 @@ function clearCanvas(ctx) {
 // bubble class
 class Bubble {
     static list = [];
-    static max = 100000;
+    static max = 10000;
 
     static generateBubbles() {
         if (Bubble.list.length < Bubble.max){
