@@ -19,18 +19,6 @@ a{
     position: relative;
 }
 
-/* input{
-    top: 8%;
-    left: 8%;
-    position: absolute;
-    padding: 18px;
-    font-weight: bolder;
-    border: none;
-    background-color: azure;
-    color: rgb(188, 148, 230);
-    font-size: larger;
-} */ 
-
 input, button{
     margin: 12px;
     padding: 18px;
