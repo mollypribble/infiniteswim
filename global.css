@@ -29,6 +29,10 @@ input, button{
     font-size: larger;
 }
 
+button{
+    width: 212px;
+}
+
 input:hover, button:hover{
     background-color: rgb(177, 219, 218);
 }
